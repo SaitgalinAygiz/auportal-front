@@ -1711,7 +1711,7 @@ footer {
 }
 
 .modal_big {
-  display: none;
+  display: block;
 }
 .modal_big_cont_title input[type=checkbox]:checked + span {
   color: #FF5254;
