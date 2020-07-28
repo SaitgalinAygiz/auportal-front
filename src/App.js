@@ -9,14 +9,12 @@ import {YMaps} from "react-yandex-maps";
 function App() {
     return (
         <div className="App">
-
             <YMaps
                 query={{apikey: 'e2345445-15e9-432b-8037-6107be685564'}}
             >
                 <Router>
                     <ModalProvider>
                         <TopBar/>
-
                     </ModalProvider>
                     <Routes/>
                 </Router>
