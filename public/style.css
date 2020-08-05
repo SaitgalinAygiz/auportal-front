@@ -3188,7 +3188,6 @@ input[type=checkbox] {
 .modal_in_css input {
   width: 100%;
   height: 40px;
-  background: #FFFFFF;
   border: 1px solid #BDBDBD;
   box-sizing: border-box;
   border-radius: 2px;
@@ -3357,4 +3356,321 @@ input[type=checkbox] {
   bottom: 30px;
 }
 
+/*Заявка на просчет автозапчастей*/
+p{
+  margin: 0;
+}
+.modal_bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.modal_avtozap_css .modal_box {
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  position: relative;
+  width: 100%;
+  max-width: 1135px;
+  padding: 20px 50px 15px;
+}
+.modal_avtozap_css h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.avtozap_s1 {
+  background: #FF5254;
+  border-radius: 2px;
+  width: 190px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  top: 20px;
+}
+.avtozap_s1 span {
+  color: #ffffff;
+  font-size: 29px;
+  margin-left: 15px;
+}
+.modal_avtozap_up{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.modal_avtozap_drop{
+  width: 190px;
+  margin-right: 20px;
+  position: relative;
+}
+.modal_avtozap_drop p{
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-image: url(/img/drop_down.svg);
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  cursor: pointer;
+}
+.modal_avtozap_drop_box {
+  position: absolute;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  width: calc(100% - 2px);
+  top: 38px;
+  display: block;
+  max-height: 305px;
+  overflow: auto;
+  display: none;
+  z-index: 1;
+}
+.modal_avtozap_drop.active .modal_avtozap_drop_box{
+  display: block;
+}
+.modal_avtozap_drop.active p{
+  background-image: url(/img/drop_up.svg);
+}
+.modal_avtozap_mycar h3{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  padding:12px;
+  padding-bottom: 6px;
+  color: #828282;
+}
+.modal_avtozap_drop_box li{
+  padding:12px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+}
+.modal_avtozap_drop_box li:hover{
+  background: #EFEFEF;
+}
+.modal_avtozap_othercar h3{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  padding:12px;
+  padding-bottom: 6px;
+  padding-top: 17px;
+  color: #828282;
+}
+.modal_avtozap_vin{
+  width: calc(100% - 420px);
+  height: 38px !important;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: flex;
+}
+.hover2:hover{
+  box-shadow: 0px 70px 1px 1px #0000001f inset;
+}
+.modal_avtozap_vin a {
+  display: flex;
+  padding:0px 12px;
+  align-items: center;
+  justify-content: center;
+  background: #FF5254;
+  color: #fff;
+  white-space: nowrap;
+}
+.modal_avtozap_vin a:before{
+  content: url(/img/photo.svg);
+  margin-right: 8px;
+}
+.modal_avtozap_vin input {
+  border: none;
+  border-right: 1px solid #BDBDBD;
+  width: 100%;
+  padding: 12px 10px;
+  height: 36.9px !important;
+}
+.modal_avtozap_main{
+  background: #FAFAFA;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 20px;
+}
+.modal_avtozap_main h3{
+  padding:9px 14px;
+  border-bottom: 1px solid #CCCCCC;
+  box-shadow: 0px 3px 3px rgba(201, 201, 201, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+.modal_avtozap_main_box {
+  padding: 15px;
+  height: 355px;
+  overflow-y: scroll;
+}
+.modal_avtozap_item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal_avtozap_item_num{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 10px;
+}
+.modal_avtozap_item input{
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 40px;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #828282;
+  width: 580px;
+  margin-right: 20px;
+}
+.modal_avtozap_item .modal_avtozap_drop p{
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.modal_avtozap_item .modal_avtozap_drop_box {
+  top: 28px;
+}
+.modal_avtozap_main_box>a{
+  background: #FF5254;
+  border-radius: 2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 142px;
+  height: 31px;
+  position: relative;
+}
+.modal_avtozap_main_box>a:before{
+  content: url(/img/plus.svg);
+  margin-right: 20px;
+  position: absolute;
+  left: 20px;
+}
+.zap_form_row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.zap_form_l{
+  width: 70%;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.zap_form_r{
+  width: 30% !important;
+  height: 50px !important;
+  background: #BDBDBD;
+  border-radius: 2px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.zap_form_l input{
+  width: calc(100%/3 - 5px);
+  height: 50px !important;
+  padding: 15px 15px 15px 40px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background-repeat: no-repeat;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.zap_form_name{
+  background-image: url(/img/form_name.svg);
+  background-position: center left 8px;
+}
+.zap_form_tel{
+  background-image: url(/img/form_tel.svg);
+  background-position: center left 8px;
+}
+.zap_form_email{
+  background-image: url(/img/form_mail.svg);
+  background-position: center left 8px;
+}
+.zap_form_chek{
+  display: flex;
+  justify-content: space-between;
+}
+.zap_form_chek_item{
+  padding-left: 30px;
+  position: relative;
+}
+.zap_form_chek_item h3{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+  margin-bottom: 5px;
+}
+.zap_form_chek_item p{
+  font-size: 12px;
+  line-height: 14px;
+  color: #4F4F4F;
+  margin-bottom: 7px;
+}
+.zap_form_chek_item h4{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.zap_form_chek_item input{
+  display: none;
+}
+.zap_form_chek_box{
+
+}
+.zap_form_chek_box:before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FF4A30;
+  border-radius: 55px;
+  left: 0px;
+}
+.zap_form_chek_item input[type=radio]:checked + .zap_form_chek_box:before{
+  background-color: #FF4A30;
+  box-shadow: 0px 0px 0px 3px #fff inset
+}
+
+/**/
 /*# sourceMappingURL=style.css.map */

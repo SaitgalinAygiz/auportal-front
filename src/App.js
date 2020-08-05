@@ -15,8 +15,9 @@ function App() {
                 <Router>
                     <ModalProvider>
                         <TopBar/>
+                        <Routes/>
+
                     </ModalProvider>
-                    <Routes/>
                 </Router>
                 <BottomBar/>
             </YMaps>
