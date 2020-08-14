@@ -1213,7 +1213,7 @@ header, .hed_up {
   cursor: pointer;
 }
 .hed_up_location:after {
-  content: url(../../img/arUp.svg);
+  content: url(../../img/arrow_down.svg);
   margin-left: 8px;
   margin-top: 3px;
 }
@@ -1572,7 +1572,7 @@ header, .hed_up {
 }
 
 footer {
-  margin-top: 80px;
+  margin-top: 300px;
 }
 
 .modal_big {
@@ -2266,12 +2266,12 @@ footer {
   display: flex;
   align-items: center;
   padding: 3px 15px;
-  background-image: url(../../img/test9.png);
+  background-image: url(../../img/drop_down.svg);
   background-repeat: no-repeat;
   background-position: center right 10px;
 }
 .a1c3_drop.active {
-  background-image: url(../../img/test6.jpg);
+  background-image: url(../../img/drop_up.svg);
 }
 .a1c3_drop_down {
   display: none;
@@ -2499,7 +2499,7 @@ input[type=checkbox] {
 }
 .f1c1_item h2:after {
   content: " ";
-  background-image: url(../../img/2.png);
+  background-image: url(../../img/arrow_down.svg);
   width: 18px;
   height: 11px;
   background-size: contain;
@@ -3106,15 +3106,15 @@ input[type=checkbox] {
 }
 .password-control {
   position: absolute;
-  top: 11px;
+  top: 12px;
   right: 11px;
   display: inline-block;
   width: 28px;
-  height: 20px;
-  background: url(../../img/test3.jpg) 50%;
+  height: 16px;
+  background: url(../../img/glas_in.svg) 50%;
 }
 .password-control.view {
-  background: url(../../img/test6.jpg);
+  background: url(../../img/glas_out.svg);
 }
 
 .in_tel {
@@ -3183,7 +3183,7 @@ input[type=checkbox] {
   letter-spacing: 0.03em;
   color: #FF5254;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .modal_in_css input {
   width: 100%;
@@ -3672,5 +3672,101 @@ p{
   box-shadow: 0px 0px 0px 3px #fff inset
 }
 
+.error-messages {
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  color: #828282;
+  margin-bottom: 5px;
+}
+
+.modal_tel .modal_box{
+  max-width: 480px;
+  background-color: #fff;
+  padding: 40px 60px;
+  text-align: center;
+  position: relative;
+}
+.modal_tel .modal_box h2{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #4F4F4F;
+}
+.modal_tel .modal_box p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 37px;
+}
+.modal_tel .modal_box a{
+  background: #FF5254;
+  border-radius: 2px;
+  width: 295px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin:auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+.modal_tel .modal_box input{
+  margin-bottom: 25px;
+  width: 295px;
+  height: 55px;
+  border: 2px solid #BBBBBB;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 0 15px 0 45px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  background: #FFFFFF url(/img/key.svg) no-repeat center left 12px;
+}
 /**/
 /*# sourceMappingURL=style.css.map */
+.modal_email .modal_box{
+  background-color: #fff;
+  padding: 40px 60px;
+  text-align: center;
+  position: relative;
+}
+.modal_email .modal_box h2{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #4F4F4F;
+}
+.modal_email .modal_box p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 37px;
+}
+.modal_email .modal_box a{
+  background: #FF5254;
+  border-radius: 2px;
+  width: 294.23px;
+  height: 53.7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin:auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+.navigationActive {
+  background-color: #F4F4F4;
+}
+
