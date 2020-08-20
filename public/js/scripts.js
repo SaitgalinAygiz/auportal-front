@@ -86,10 +86,11 @@ jQuery(document).ready(function($) {
 
      */
 
-    $( ".a1c3_drop" ).click(function() {
+    /*$( ".a1c3_drop" ).click(function() {
       $(this).toggleClass( "active" );  
       $('.a1c3_drop_down').toggleClass( "active" );
     });
+     */
 
     $( ".a1c3_fil" ).click(function() {
       $(this).toggleClass( "active" );  

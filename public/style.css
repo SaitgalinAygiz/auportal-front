@@ -1572,7 +1572,7 @@ header, .hed_up {
 }
 
 footer {
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 .modal_big {
@@ -3548,7 +3548,6 @@ p{
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #828282;
   width: 580px;
   margin-right: 20px;
 }
@@ -3770,3 +3769,185 @@ p{
   background-color: #F4F4F4;
 }
 
+
+/*Личный кабинет - Персональные данные  */
+.menu_lc_up{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu_lc_up_item{
+  display: flex;
+  justify-content: space-between;
+}
+.menu_lc_up_item a{
+  background: #FFFFFF;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  padding-right: 9px;
+  padding-left: 9px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+.menu_lc_up_item a img{
+  margin-right: 9px;
+}
+.menu_lc_up_item a svg path{
+  fill:#333;
+}
+.menu_lc_up_item a.active svg path{
+  fill:#fff;
+}
+.menu_lc_up_item a:last-child{
+  border-right: 1px solid #E0E0E0;
+}
+.menu_lc_up_item a.active{
+  background: #FF5254;
+  color: #fff;
+  fill: #fff;
+}
+.menu_lc_up_item a:hover{
+  box-shadow: 0 70px 1px 1px #0000001f inset;
+}
+.menu_lc_down{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu_lc_down_row{
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 297px);
+}
+.menu_lc_down_name{
+  background: #FFFFFF;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  width: 297px;
+  background-image: url(/img/drop_down.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+.menu_lc_down_name p{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+.menu_lc_down_name_img{
+  position: relative;
+  margin-left: 12px;
+  margin-right: 13px;
+}
+.menu_lc_down_name_foll{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #FF5254;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  top:calc(50% - 12px);
+  left: -12px;
+}
+.menu_lc_down_item{
+  background: #FFFFFF;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  padding-right: 9px;
+  padding-left: 9px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  width: 100%;
+  font-size: 14px;
+  line-height: 100%;
+  color: #8F8F8F;
+}
+.menu_lc_down_item:last-child{
+  border-right: 1px solid #E0E0E0;
+}
+.menu_lc_down_item.act{
+  color: #333333;
+}
+.menu_lc_down_item.act img{
+  margin-right: 8px;
+}
+.menu_lc_down_item:hover{
+  box-shadow: 0 70px 1px 1px #0000001f inset;
+}
+.menu_lc{
+  margin-bottom: 25px;
+}
+.title4{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.pers_date_row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 20px;
+  margin-bottom: 20px;
+}
+.pers_date_form input[type="submit"]{
+  margin: 70px auto auto;
+  display: block;
+  width: 295px;
+  height: 45px;
+  background: #BDBDBD;
+  border-radius: 2px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.pers_date_item{
+  display: flex;
+  flex-flow:column;
+}
+.pers_date_item label{
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #444444;
+  margin-bottom: 8px;
+}
+.pers_date_item input{
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  height: 43px;
+  padding: 0 18px;
+}
+.pers_date_item input::placeholder{
+  color: #333333;
+}
+/*Личный кабинет - Персональные данные  */
