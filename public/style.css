@@ -4427,7 +4427,7 @@ p{
 .mag_mark_item{
   font-size: 15px;
   line-height: 18px;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: 20px;
 }
 .mag_mark_item:after{
@@ -4444,11 +4444,12 @@ p{
   opacity: 0.7;
   margin-left: 10px;
 }
-.mag_comp_item:before{
+
+.mag_comp_item button {
   content: '';
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   width: 30px;
   height: 30px;
   background-image: url(/img/close_foto.svg);
@@ -4535,7 +4536,7 @@ input.vk{
 input.inst{
   background-image: url(/img/inst.svg);
 }
-input.og{
+input.ok{
   background-image: url(/img/og.svg);
 }
 input.tw{
@@ -4771,7 +4772,8 @@ input.yt{
   width: 100%;
   object-fit: cover;
 }
-.mag_video_item::before {
+
+.mag_video_item button {
   content: "";
   position: absolute;
   right: 0;
@@ -4785,6 +4787,7 @@ input.yt{
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .mag_video_additem{
   background: #FFFFFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -4831,6 +4834,12 @@ input.yt{
   border-radius: 50px;
   margin-left: 16px;
 }
+
+.selectServices {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px 10px;
+}
 /*Личный кабинет - Добавление магазина  */
 
 
@@ -4851,11 +4860,6 @@ input.yt{
 .modal_usl .modal_big_cont {
   overflow-y: auto;
   height: calc(100% - 160px - 101px);
-}
-.modal_big_usl_row{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px 30px;
 }
 .modal_big_cont_usl_item li{
   margin-bottom: 20px;
