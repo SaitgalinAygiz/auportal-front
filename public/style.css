@@ -4551,13 +4551,13 @@ input.yt{
 .mag_adr_inf{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 65px;
+  margin-bottom: 15px;
 }
 .mag_adr_town{
-  width: 295px;
+  width: 400px;
 }
 .mag_adr_streat{
-  width: calc(100% - 295px - 3 * 85px - 4 * 20px);
+  width: 715px;
 }
 .mag_adr_streat input{
   padding-left: 72px;
@@ -4681,13 +4681,6 @@ input.yt{
   position: relative;
   margin-bottom: 15px;
 }
-.mag_adr_cont_tel_item:before{
-  content: url(/img/close_min.svg);
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
 .mag_adr_cont_tel input{
   padding-left: 70px;
   background-image: url(/img/tel_gray.svg);
@@ -4746,9 +4739,9 @@ input.yt{
 .mag_adr_add_map{
   max-width: 240px;
   margin-left: 0;
-  margin-top: 45px;
   font-size: 18px;
   line-height: 21px;
+  margin-top: -55px;
 }
 .mag_adr_add_map img{
   margin-right: 16px;
